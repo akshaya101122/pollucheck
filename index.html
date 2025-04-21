@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Quality Monitoring System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Monitoring</h1>
+        <input type="text" id="location" placeholder="Enter your location" />
+        <button class="btn" onclick="fetchData()">Get Data</button>
+        <div id="error-message" class="error-message"></div>
+
+        <div id="data-container" class="data-container" style="display: none;">
+            <p><strong>Temperature:</strong> <span id="temperature">Loading...</span></p>
+            <p><strong>PM2.5:</strong> <span id="pm25">Loading...</span></p>
+            <p><strong>PM10:</strong> <span id="pm10">Loading...</span></p>
+            <p><strong>NO2:</strong> <span id="no2">Loading...</span></p>
+            <p><strong>O3:</strong> <span id="o3">Loading...</span></p>
+            <p><strong>SO2:</strong> <span id="so2">Loading...</span></p>
+            <p id="air-status"><strong>Air Quality Status:</strong> Loading...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+<!-- about button  -->
+
+<!-- <button class="btn" onclick="fetchData()">Get Data</button> -->
+<!-- New "About" Button -->
+<a href="about.html">
+    <button class="btn" style="margin-top: 10px; background-color: #198754;">About</button>
+</a>
+
+
+
+</body>
+</html>
